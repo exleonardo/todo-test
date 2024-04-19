@@ -19,7 +19,7 @@ export const useApplication = () => {
   }
 
   const addTodosHandler = (title: string) => {
-    dispatch(todosActions.addTodolist({ id: v1(), order: todoOrder(), title }))
+    dispatch(todosActions.addTodolist({ filter: 'all', id: v1(), order: todoOrder(), title }))
   }
 
   return {
