@@ -1,0 +1,65 @@
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  .inputButtonBlock {
+    display: flex;
+  }
+
+  .input {
+    width: 90%;
+
+
+    padding: 0 1rem;
+    border: 2px solid var(--color-dark-500);
+    font-size: 1rem;
+    transition:
+      border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+      color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+      background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--color-dark-500);
+    transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+  }
+
+  .input:hover,
+  .input:focus,
+  .inputGroup:hover .input {
+    outline: none;
+    border-color: var(--color-success-300);
+  }
+
+  .inputGroup:hover,
+  .input:focus {
+    color: var(--color-dark-900);
+  }
+
+  .button {
+    width: max-content;
+    min-width: 10%;
+    border-radius: 0.5rem;
+    color: var(--color-light-100);
+    display: inline;
+    margin-left: 10px;
+    border: 2px solid var(--color-info-500);
+    background-color: var(--color-info-500);
+    &:hover {
+      background: var(--color-info-700);
+      border: 2px solid var(--color-info-700);
+    }
+    &:active {
+      transform: scale(0.97);
+
+      background: var(--color-info-500);
+      border: 2px solid var(--color-info-500);
+    }
+  }
+
+}

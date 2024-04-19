@@ -1,0 +1,46 @@
+.inputContainer {
+  position: relative;
+}
+
+.inputField {
+  display: block;
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  border: none;
+  border-bottom: 2px solid var(--color-light-900);
+  outline: none;
+  background-color: transparent;
+}
+
+.inputHighlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--color-success-500);
+  transition: all 0.3s ease;
+}
+
+.inputField:focus {
+  color: var(--color-dark-900);
+}
+
+.inputField:focus + .inputHighlight {
+  width: 100%;
+}
+
+.title {
+  color: var(--color-dark-900);
+  text-align: center;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+.isDone {
+  text-align: center;
+  margin: 10px 0;
+  padding-left: 10px;
+  text-decoration: line-through;
+  color: var(--color-dark-900);
+}
